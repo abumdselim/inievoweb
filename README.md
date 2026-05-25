@@ -86,16 +86,19 @@ I actively contribute to open-source projects and embrace collaborative developm
 
 <p align="left">
   <a href="https://www.hackerrank.com/abumdselim" target="_blank">
-    <img src="https://img.shields.io/badge/Python-5%20Stars-F7DF1E?style=for-the-badge&logo=hackerrank&logoColor=black" alt="Python 5 Stars" />
+    <img src="https://img.shields.io/badge/Python-5%20Stars%20%E2%AD%90%E2%AD%90%E2%AD%90%E2%AD%90%E2%AD%90-F7DF1E?style=for-the-badge&logo=hackerrank&logoColor=black" alt="Python 5 Stars" />
   </a>&nbsp;
   <a href="https://www.hackerrank.com/abumdselim" target="_blank">
-    <img src="https://img.shields.io/badge/Problem%20Solving-3%20Stars-C0C0C0?style=for-the-badge&logo=hackerrank&logoColor=black" alt="Problem Solving 3 Stars" />
+    <img src="https://img.shields.io/badge/Problem%20Solving-3%20Stars%20%E2%AD%90%E2%AD%90%E2%AD%90-C0C0C0?style=for-the-badge&logo=hackerrank&logoColor=black" alt="Problem Solving 3 Stars" />
   </a>
 </p>
 
 ### 📜 Verified Certificates
 
 <p align="left">
+  <a href="https://www.hackerrank.com/certificates/863e9c4ff09c" target="_blank">
+    <img src="https://img.shields.io/badge/Software%20Engineer-Verified-00EA64?style=for-the-badge&logo=hackerrank&logoColor=white" alt="Software Engineer" />
+  </a>&nbsp;
   <a href="https://www.hackerrank.com/certificates/487a8e53295a" target="_blank">
     <img src="https://img.shields.io/badge/Frontend%20Developer%20(React)-Verified-00EA64?style=for-the-badge&logo=hackerrank&logoColor=white" alt="Frontend Developer React" />
   </a>
