@@ -109,8 +109,25 @@ I actively contribute to open-source projects and embrace collaborative developm
 
 ---
 
-## 🔗 Connect With Me
+## 🌐 Let's Connect
 
-<p align="center">
-  <a href="https://github.com/abumdselim"><img src="https://img.shields.io/badge/GitHub-abumdselim-181717?style=for-the-badge&logo=github" /></a>
-</p>
+<div align="center">
+  <a href="https://www.linkedin.com/in/aabumdselim" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>&nbsp;
+  <a href="https://www.facebook.com/aabumdselim" target="_blank">
+    <img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook" />
+  </a>&nbsp;
+  <a href="https://www.instagram.com/miishu.s" target="_blank">
+    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
+  </a>&nbsp;
+  <a href="mailto:selim@inievo.com">
+    <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+  </a>&nbsp;
+  <a href="https://t.me/abumdselim" target="_blank">
+    <img src="https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram" />
+  </a>&nbsp;
+  <a href="https://github.com/abumdselim" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+  </a>
+</div>
