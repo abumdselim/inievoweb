@@ -80,6 +80,29 @@ I actively contribute to open-source projects and embrace collaborative developm
 
 ---
 
+## 🚀 Featured Projects
+
+### 🏗️ The Chattala
+
+> A modern, AI-powered full-stack web platform built with Next.js and TypeScript — designed for real-world scalability, clean architecture, and seamless user experience. Deployed on Firebase App Hosting with automated CI/CD on every push to main.
+
+<p align="left">
+  <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwind-css&logoColor=white" />
+  <img src="https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white" />
+  <img src="https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black" />
+  <img src="https://img.shields.io/badge/Genkit_AI-4285F4?style=flat-square&logo=google&logoColor=white" />
+</p>
+
+| | |
+|---|---|
+| 🌍 **Live** | [thechattala.com](https://thechattala.com) |
+| 💻 **Source** | [github.com/abumdselim/thechattala](https://github.com/abumdselim/thechattala) |
+| 🏗️ **By** | Inievo Technologies |
+
+---
+
 ## 🏆 Certifications & Achievements
 
 ### 🔖 HackerRank Badges
