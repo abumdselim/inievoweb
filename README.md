@@ -235,13 +235,7 @@ I actively contribute to open-source projects and embrace collaborative developm
 
 ---
 
-## 🥇 GitHub Trophies
 
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=abumdselim&theme=tokyonight&no-frame=true&no-bg=true&margin-w=6&row=2&column=4" alt="GitHub Trophies" />
-</div>
-
----
 
 ## 📊 GitHub Stats
 
