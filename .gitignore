@@ -1,0 +1,15 @@
+# Dependencies
+node_modules/
+
+# Next.js
+.next/
+out/
+
+# Data (lead captures)
+data/
+
+# Source reference clone
+../_source_inievo/
+
+# Env
+.env*.local

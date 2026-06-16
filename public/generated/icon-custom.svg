@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <rect width="100%" height="100%" rx="32" fill="#137ece" opacity="0.12"/>
+  <rect x="24" y="24" width="208" height="208" rx="28" fill="white" stroke="#e2e8f0"/>
+  <circle cx="128" cy="108" r="36" fill="#137ece" opacity="0.85"/>
+  <text x="128" y="188" text-anchor="middle" fill="#0f172a" font-family="Segoe UI, system-ui, sans-serif" font-size="16" font-weight="700">Custom</text>
+</svg>
