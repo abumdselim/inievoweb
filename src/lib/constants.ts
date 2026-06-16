@@ -13,8 +13,7 @@ export const LOGO_URL = "https://res.cloudinary.com/dp5ap39r6/image/upload/v1777
 export const FAVICON_URL =
   "https://res.cloudinary.com/dgcnhseqm/image/upload/q_auto/f_auto/v1781425367/6_atgj0f.png" as const;
 
-export const OG_IMAGE_URL =
-  "https://res.cloudinary.com/dgcnhseqm/image/upload/q_auto/f_auto/v1781425436/ChatGPT_Image_May_16_2026_01_25_18_PM_zda27a.png" as const;
+export const OG_IMAGE_URL = "https://inievo.com/og/inievo-og.jpg" as const;
 
 export const SITE_SCOPE = {
   "include_fintech": false,
