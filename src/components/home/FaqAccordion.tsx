@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 import { InievoIcon } from "@/components/ui/InievoIcon";
 
@@ -60,6 +61,14 @@ export function FaqAccordion({ items }: { items: FaqItem[] }) {
           </div>
         );
       })}
+      <Link
+        href="/contact"
+        className="group rounded-2xl border-2 border-[#0f6db8] px-5 sm:px-6 py-5 transition-all duration-300 bg-transparent hover:bg-[#137ece] active:bg-[#137ece] shadow-sm hover:shadow-md hover:shadow-[#137ece]/25 active:shadow-lg active:shadow-[#137ece]/30 flex items-center justify-center min-h-[44px] min-w-[44px]"
+      >
+        <span className="font-body text-[15px] sm:text-base font-medium text-[#137ece] group-hover:text-white group-active:text-white leading-snug transition-colors duration-300">
+          More Questions? Ask Us!
+        </span>
+      </Link>
     </div>
   );
 }
