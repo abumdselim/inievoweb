@@ -1,0 +1,46 @@
+{
+  "redirects": [
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/puc-pro.html",
+      "destination": "/work/puc-pro",
+      "permanent": true
+    },
+    {
+      "source": "/the-chattala.html",
+      "destination": "/work/the-chattala",
+      "permanent": true
+    },
+    {
+      "source": "/blog.html",
+      "destination": "/blog",
+      "permanent": true
+    },
+    {
+      "source": "/studio.html",
+      "destination": "/studio",
+      "permanent": true
+    },
+    {
+      "source": "/blog-post.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "slug",
+          "value": "(?<slug>.*)"
+        }
+      ],
+      "destination": "/blog/:slug",
+      "permanent": true
+    },
+    {
+      "source": "/blog-post.html",
+      "destination": "/blog",
+      "permanent": true
+    }
+  ]
+}

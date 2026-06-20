@@ -1048,6 +1048,191 @@ body.menu-open::after {
 .footer-links a:hover { color: var(--text-primary); }
 
 /* ============================================================
+   CASE STUDY — project hero, details, contact variant
+   ============================================================ */
+.project-hero {
+    padding: 140px 7% 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    border-bottom: 1px solid var(--border);
+}
+
+.massive-text {
+    font-family: var(--font-display);
+    font-size: clamp(2.8rem, 7vw, 5.5rem);
+    font-weight: 400;
+    line-height: 1.05;
+    color: var(--text-primary);
+    margin-bottom: 24px;
+}
+
+.massive-text em {
+    font-style: italic;
+    color: var(--text-secondary);
+}
+
+.project-hero-desc {
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: var(--text-secondary);
+    max-width: 480px;
+}
+
+.project-hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+}
+
+.project-details {
+    padding: var(--section-pad);
+    background: var(--bg);
+}
+
+.project-details-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 300px;
+    gap: 80px;
+    align-items: start;
+}
+
+.project-content h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--text-primary);
+    margin-bottom: 20px;
+}
+
+.project-content p {
+    font-size: 1rem;
+    line-height: 1.85;
+    color: var(--text-secondary);
+}
+
+.project-list {
+    list-style: none;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.project-list li {
+    font-size: 1rem;
+    line-height: 1.75;
+    color: var(--text-secondary);
+    padding-left: 20px;
+    position: relative;
+}
+
+.project-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.65em;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--text-muted);
+}
+
+.project-sidebar {
+    position: sticky;
+    top: 100px;
+}
+
+.sidebar-card {
+    padding: 24px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.sidebar-card h4 {
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 10px;
+}
+
+.sidebar-card p {
+    font-size: 0.95rem;
+    color: var(--text-primary);
+}
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.project-tech span {
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    border: 1px solid var(--border);
+    border-radius: 100px;
+    padding: 4px 12px;
+}
+
+.contact-top {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.contact-top p {
+    font-size: 1rem;
+    line-height: 1.75;
+    color: var(--text-secondary);
+    margin-bottom: 48px;
+}
+
+.contact-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding-top: 48px;
+    border-top: 1px solid var(--border);
+}
+
+.footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+.social-icon-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    color: var(--text-muted);
+    transition: var(--transition);
+}
+
+.social-icon-link svg {
+    width: 18px;
+    height: 18px;
+}
+
+.social-icon-link:hover {
+    border-color: var(--border-hover);
+    color: var(--text-primary);
+}
+
+/* ============================================================
    RESPONSIVE
    ============================================================ */
 @media (max-width: 1100px) {
@@ -1083,6 +1268,21 @@ body.menu-open::after {
     .blog-grid { grid-template-columns: repeat(2, 1fr); }
 
     .footer-inner { flex-direction: column; gap: 16px; text-align: center; }
+
+    .project-hero {
+        grid-template-columns: 1fr;
+        gap: 48px;
+        padding-top: 120px;
+    }
+
+    .project-hero-desc { max-width: 100%; }
+
+    .project-details-grid {
+        grid-template-columns: 1fr;
+        gap: 56px;
+    }
+
+    .project-sidebar { position: static; }
 }
 
 @media (max-width: 600px) {

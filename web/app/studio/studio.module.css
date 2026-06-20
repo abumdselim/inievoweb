@@ -1,0 +1,696 @@
+/* Login screen (P4-T2) */
+.loginScreen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.loginBox {
+  width: 100%;
+  max-width: 380px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 48px;
+  background: var(--bg-3);
+}
+
+.loginLogo {
+  font-size: 0.65rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.25);
+  margin-bottom: 40px;
+}
+
+.loginBox h1 {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.loginSubtitle {
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.3);
+  margin-bottom: 36px;
+}
+
+.loginInput {
+  width: 100%;
+  padding: 14px 16px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #fff;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.loginInput:focus {
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+.loginBtn {
+  width: 100%;
+  padding: 14px;
+  background: #fff;
+  color: #000;
+  border: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 8px;
+  transition: opacity 0.2s;
+}
+
+.loginBtn:hover:not(:disabled) {
+  opacity: 0.88;
+}
+
+.loginBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.loginError {
+  font-size: 0.78rem;
+  color: #ff6b6b;
+  margin-top: 12px;
+}
+
+.configNotice {
+  font-size: 0.78rem;
+  color: rgba(255, 255, 255, 0.45);
+  margin-top: 12px;
+}
+
+/* Studio app shell */
+.studioApp {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--bg-2);
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.studioTopbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  height: 56px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  position: sticky;
+  top: 0;
+  background: var(--bg-2);
+  z-index: 100;
+}
+
+.topbarLeft {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.studioBrand {
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.25);
+}
+
+.topbarStatus {
+  font-size: 0.72rem;
+  color: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.statusDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.statusDotSaved {
+  background: #4ade80;
+}
+
+.statusDotSaving {
+  background: #facc15;
+}
+
+.topbarActions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.btnOutline {
+  padding: 7px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: transparent;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 0.75rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btnOutline:hover {
+  border-color: rgba(255, 255, 255, 0.25);
+  color: #fff;
+}
+
+.btnPublish {
+  padding: 7px 20px;
+  background: #fff;
+  color: #000;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.btnPublish:hover {
+  opacity: 0.85;
+}
+
+.btnUnpublish {
+  padding: 7px 20px;
+  background: transparent;
+  border: 1px solid rgba(255, 100, 100, 0.3);
+  color: rgba(255, 120, 120, 0.7);
+  font-size: 0.75rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btnUnpublish:hover {
+  border-color: rgba(255, 100, 100, 0.6);
+  color: #ff8080;
+}
+
+.logoutBtn {
+  padding: 7px 16px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.logoutBtn:hover:not(:disabled) {
+  border-color: rgba(255, 255, 255, 0.25);
+  color: #fff;
+}
+
+.logoutBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.studioMain {
+  display: flex;
+  flex: 1;
+}
+
+.studioSidebar {
+  width: 260px;
+  border-right: 1px solid rgba(255, 255, 255, 0.06);
+  overflow-y: auto;
+  flex-shrink: 0;
+}
+
+.sidebarHeader {
+  padding: 20px 20px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.sidebarTitle {
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.25);
+}
+
+.btnNew {
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.4);
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 4px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btnNew:hover {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.postList {
+  padding: 8px 0;
+}
+
+.postListEmpty {
+  padding: 16px 20px;
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.25);
+  line-height: 1.5;
+}
+
+.postListItem {
+  width: 100%;
+  text-align: left;
+  padding: 12px 20px;
+  cursor: pointer;
+  border: none;
+  border-left: 2px solid transparent;
+  background: transparent;
+  transition: all 0.15s;
+}
+
+.postListItem:hover {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.postListItemActive {
+  background: rgba(255, 255, 255, 0.04);
+  border-left-color: rgba(255, 255, 255, 0.3);
+}
+
+.pliTitle {
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.pliMeta {
+  font-size: 0.68rem;
+  color: rgba(255, 255, 255, 0.2);
+  display: flex;
+  gap: 8px;
+}
+
+.pliStatus {
+  font-size: 0.62rem;
+  padding: 1px 6px;
+  border-radius: 100px;
+}
+
+.pliStatusPublished {
+  background: rgba(74, 222, 128, 0.1);
+  color: #4ade80;
+}
+
+.pliStatusDraft {
+  background: rgba(255, 255, 255, 0.05);
+  color: rgba(255, 255, 255, 0.25);
+}
+
+.studioEditorWrap {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.editorMetaFields {
+  padding: 40px 60px 0;
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.metaRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.metaField {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.metaFieldFull {
+  grid-column: 1 / -1;
+}
+
+.metaField label {
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.metaInput {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.85rem;
+  padding: 8px 0;
+  outline: none;
+  transition: border-color 0.2s;
+  font-family: inherit;
+}
+
+.metaInput:focus {
+  border-bottom-color: rgba(255, 255, 255, 0.3);
+  color: #fff;
+}
+
+.titleInput {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 400;
+  color: #fff;
+  padding: 32px 60px 16px;
+  max-width: 800px;
+  margin: 0 auto;
+  display: block;
+  line-height: 1.2;
+}
+
+.titleInput::placeholder {
+  color: rgba(255, 255, 255, 0.12);
+}
+
+.tiptapWrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 60px 120px;
+}
+
+.tiptapToolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  margin-bottom: 24px;
+  position: sticky;
+  top: 56px;
+  background: var(--bg-2);
+  z-index: 10;
+}
+
+.toolbarGroup {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.toolbarBtn {
+  padding: 5px 10px;
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.35);
+  font-size: 0.78rem;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: all 0.15s;
+  font-family: inherit;
+}
+
+.toolbarBtn:hover,
+.toolbarBtnActive {
+  background: rgba(255, 255, 255, 0.07);
+  color: #fff;
+}
+
+.toolbarSep {
+  width: 1px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.07);
+  align-self: center;
+  margin: 0 4px;
+}
+
+.editorContent {
+  min-height: 400px;
+}
+
+.proseMirror {
+  outline: none;
+  min-height: 400px;
+  font-size: 1rem;
+  line-height: 1.85;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.proseMirror p.is-editor-empty:first-child::before {
+  content: attr(data-placeholder);
+  color: rgba(255, 255, 255, 0.12);
+  pointer-events: none;
+  float: left;
+  height: 0;
+}
+
+.proseMirror h2 {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #fff;
+  margin: 48px 0 16px;
+}
+
+.proseMirror h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 32px 0 12px;
+}
+
+.proseMirror blockquote {
+  border-left: 2px solid rgba(255, 255, 255, 0.15);
+  padding-left: 20px;
+  margin: 28px 0;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.proseMirror code {
+  background: rgba(255, 255, 255, 0.06);
+  padding: 2px 5px;
+  border-radius: 3px;
+  font-family: "SF Mono", ui-monospace, monospace;
+  font-size: 0.85em;
+}
+
+.proseMirror pre {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 20px;
+  border-radius: 6px;
+  margin: 24px 0;
+  overflow-x: auto;
+}
+
+.proseMirror pre code {
+  background: none;
+  padding: 0;
+}
+
+.proseMirror ul,
+.proseMirror ol {
+  padding-left: 24px;
+  margin: 16px 0;
+}
+
+.proseMirror li {
+  margin-bottom: 6px;
+}
+
+.proseMirror a {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: underline;
+}
+
+.proseMirror img {
+  max-width: 100%;
+  border-radius: 4px;
+  margin: 24px 0;
+}
+
+.proseMirror hr {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+  margin: 40px 0;
+}
+
+.proseMirror p {
+  margin-bottom: 20px;
+}
+
+.studioSettings {
+  width: 240px;
+  border-left: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 24px 20px;
+  overflow-y: auto;
+  flex-shrink: 0;
+}
+
+.settingsSection {
+  margin-bottom: 32px;
+}
+
+.settingsLabel {
+  font-size: 0.62rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.2);
+  margin-bottom: 12px;
+}
+
+.settingsInput {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.78rem;
+  padding: 8px 10px;
+  border-radius: 3px;
+  outline: none;
+  transition: border-color 0.2s;
+  font-family: inherit;
+  margin-bottom: 8px;
+}
+
+.settingsInput:focus {
+  border-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.settingsTextarea {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.78rem;
+  padding: 8px 10px;
+  border-radius: 3px;
+  outline: none;
+  resize: vertical;
+  min-height: 80px;
+  font-family: inherit;
+  transition: border-color 0.2s;
+  line-height: 1.5;
+}
+
+.settingsTextarea:focus {
+  border-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.deleteBtn {
+  width: 100%;
+  padding: 8px;
+  background: transparent;
+  border: 1px solid rgba(255, 80, 80, 0.2);
+  color: rgba(255, 100, 100, 0.5);
+  font-size: 0.72rem;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-top: 8px;
+}
+
+.deleteBtn:hover:not(:disabled) {
+  border-color: rgba(255, 80, 80, 0.5);
+  color: #ff6060;
+}
+
+.deleteBtn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.toast {
+  position: fixed;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  background: rgba(20, 20, 20, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.8);
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  opacity: 0;
+  transition: all 0.3s ease;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+.toastShow {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+@media (max-width: 900px) {
+  .studioSettings {
+    display: none;
+  }
+
+  .studioSidebar {
+    width: 200px;
+  }
+
+  .editorMetaFields,
+  .tiptapWrapper,
+  .titleInput {
+    padding-inline: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .studioSidebar {
+    display: none;
+  }
+
+  .studioTopbar {
+    padding: 0 16px;
+  }
+
+  .topbarActions {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 480px) {
+  .loginBox {
+    padding: 32px 24px;
+  }
+}

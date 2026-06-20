@@ -1,0 +1,17 @@
+### P7-T2 â€” Production env vars
+- [~] Implement — env var table + scopes in `web/docs/DEPLOY.md` Step 2; **values still to be pasted in Vercel dashboard** (Settings → Environment Variables → redeploy)
+- [x] Automated checks — `npm run lint` + `npm run build` pass locally; Vercel remote build passed on CLI deploy
+- [ ] Responsive CSS review — N/A
+- [~] Human-like quality check — preview live without env: static routes OK; `/blog` empty/errors; `/studio` needs server secrets
+- [x] Client view items noted — paste vars from `web/.env.local` per DEPLOY.md Step 2; preview URL in DEPLOY.md
+- [x] Fix log updated
+- [ ] Sign-off `[x]`
+### P7-T3 â€” DNS `selimc.tech`
+- [ ] Implement — **pending user DNS** (Vercel Domains + apex; see DEPLOY.md Step 4)
+- [ ] Automated checks
+- [ ] Responsive CSS review
+- [ ] Human-like quality check
+- [ ] Client view items noted
+- [ ] Fix log updated
+- [ ] Sign-off `[x]`
+
