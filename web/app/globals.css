@@ -277,6 +277,7 @@ body.menu-open::after {
   content: "";
   position: fixed;
   inset: 0;
+  background: var(--bg, #080808);
   background: rgba(0, 0, 0, 0.5);
   z-index: 98;
 }
@@ -337,6 +338,7 @@ body.menu-open::after {
 .image-container {
   position: absolute;
   inset: 0;
+  background: var(--bg, #080808);
 }
 
 /* Desktop: cover full viewport (no side bars) */
@@ -347,11 +349,11 @@ body.menu-open::after {
   object-position: center center;
 }
 
-/* Mobile: cover to fill viewport */
+/* Mobile: show full image (no crop), bg blends with site */
 @media (max-width: 768px) {
   .profile-img {
-    object-fit: cover;
-    object-position: center center;
+    object-fit: contain;
+    object-position: top center;
   }
 }
 
@@ -360,11 +362,11 @@ body.menu-open::after {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 50%;
+  height: 70%;
   background: linear-gradient(
     to top,
     #080808 0%,
-    rgba(8, 8, 8, 0.8) 20%,
+    rgba(8, 8, 8, 0\.92) 30%,
     transparent 100%
   );
   pointer-events: none;
